@@ -1,6 +1,6 @@
-import { type HttpRequest, type AccountModel, type AddAccount, type AddAccountModel, type Validation } from './signup-protocols'
+import { type HttpRequest, type AccountModel, type AddAccount, type AddAccountModel, type Validation } from './signup-controller-protocols'
 import { MissingParamError, ServerError } from '../../errors/index'
-import { SignUpController } from './signup'
+import { SignUpController } from './signup-controller'
 import { badRequest, ok, serverError } from '../../helpers/http/http-helper'
 
 const makeAddAccount = (): AddAccount => { // regra de negócio - client em uma camada a parte
